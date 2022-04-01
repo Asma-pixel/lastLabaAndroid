@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/background4"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Заголовок"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            >
+
+        </TextView>
+        <EditText
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:layout_marginBottom="48dp"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Контент"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            >
+
+        </TextView>
+        <EditText
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:layout_marginBottom="48dp"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Дата"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            >
+
+        </TextView>
+        <EditText
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:layout_marginBottom="48dp"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Время"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            >
+        </TextView>
+        <EditText
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:layout_marginBottom="28dp"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Состояние"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            >
+        </TextView>
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+
+            >
+        </Spinner>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btnTime"
+                style="@style/btn"
+                android:text="Выбрать время"
+                android:textSize="8pt"
+                />
+            <Button
+                android:id="@+id/btnDate"
+                style="@style/btn"
+                android:text="Выбрать дату"
+                android:textSize="8pt"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btnOk"
+                style="@style/btn"
+                android:text="@string/btnOk"
+                />
+            <Button
+                android:id="@+id/btnCancel"
+                style="@style/btn"
+                android:text="@string/btnCansel"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
